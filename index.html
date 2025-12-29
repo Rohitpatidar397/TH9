@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TH9</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .text-box {
+      width: 80%;
+      margin: auto;
+      padding: 30px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-1">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="#">SERVICES</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="#">OUR TEAM</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <a href="#" class=" bg-primary px-2 rounded"><img class="pt-2" src="search.svg" alt="" width="24px"></a>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active position-relative">
+        <img src="girl1.jpg" class="d-block w-100" alt="">
+        <div class="position-absolute z-1 top-50 w-50 container">
+          <h1 class="text-black">WE ARE CREATIVE DIGITAL PROFESSIONAL AGENCY</h1>
+          <P class="text-info-emphasis w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            possimus, esse eligendi ducimus eius deserunt. Tempora iusto totam eveniet sit at expedita. Ex sint magnam
+            corrupti veniam pariatur aperiam voluptatibus.</P>
+          <a href="#" class="text-decoration-none py-2 px-4 rounded-pill border border-white text-light w-25">GET
+            STARTED</a>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="image2.jpeg" class="d-block w-100" alt="Image 2">
+        <div class="position-absolute z-1 top-50 end-0 w-50 container">
+          <h1 class="text-black">WE ARE CREATIVE DIGITAL PROFESSIONAL AGENCY</h1>
+          <P class="text-info-emphasis w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            possimus, esse eligendi ducimus eius deserunt. Tempora iusto totam eveniet sit at expedita. Ex sint magnam
+            corrupti veniam pariatur aperiam voluptatibus.</P>
+          <a href="#" class="text-decoration-none py-2 px-4 rounded-pill border border-white text-light w-25">GET
+            STARTED</a>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="image3.jpeg" class="d-block w-100" alt="Image 3">
+        <div class="position-absolute z-1 top-50 w-50 container">
+          <h1 class="text-black">WE ARE CREATIVE DIGITAL PROFESSIONAL AGENCY</h1>
+          <P class="text-info-emphasis w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            possimus, esse eligendi ducimus eius deserunt. Tempora iusto totam eveniet sit at expedita. Ex sint magnam
+            corrupti veniam pariatur aperiam voluptatibus.</P>
+          <a href="#" class="text-decoration-none py-2 px-4 rounded-pill border border-white text-light w-25">GET
+            STARTED</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="text-center mt-5">
+      <h4 class="text-primary">OUR EFFICIENCY</h4>
+      <h1>Why Chose Us</h1>
+      <p class="w-50 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sit et provident magni
+        quam est. Animi magni fugit quia reiciendis!</p>
+    </div>
+    <hr class="col-8 col-md-2 m-auto mt-3" />
+    <div class="row">
+      <div class="col-12 col-md-6 py-3">
+        <img src="blog-thumb-2.jpg" alt="" class="w-100">
+      </div>
+
+      <div class="col-12 col-md-6 py-5">
+        <h1>Personal Data & Analysis</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus perspiciatis ipsam alias nostrum minus
+          totam dolorum, consequuntur ab animi! Distinctio recusandae impedit illum hic minima similique omnis vero
+          itaque. Repudiandae vero rem dolore et quam sapiente nihil, quibusdam, iusto vitae perspiciatis adipisci
+          suscipit expedita hic quaerat praesentium non veritatis. Neque!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="text-center mt-5">
+      <h4 class="text-primary">CASE STUDIES</h4>
+      <h1>Our Recent Cases</h1>
+      <hr class="col-8 col-md-2 m-auto my-3" />
+      <p class="w-50 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sit et provident magni
+        quam est. Animi magni fugit quia reiciendis!</p>
+    </div>
+    <div class="row py-3">
+      <div class="col-md-4 col-sm-12 mb-3">
+        <img src="girls.jpeg" class="w-100" alt="Image 1">
+        <div class="bg-light py-2 px-3">
+          <p>Twico Profit Than Boforo</p>
+          <p>Sales SEO Visitor</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 mb-3">
+        <img src="girls1.jpeg" class="w-100" alt="Image 2">
+        <div class="bg-light py-2 px-3">
+          <p>Twico Profit Than Boforo</p>
+          <p>Sales SEO Visitor</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 mb-3">
+        <img src="girls3.jpeg" class="w-100" alt="Image 3">
+        <div class="bg-light py-2 px-3">
+          <p>Twico Profit Than Boforo</p>
+          <p>Sales SEO Visitor</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12 mb-3">
+        <img src="girls.jpeg" class="w-100" alt="Image 1">
+        <div class="bg-light py-2 px-3">
+          <p>Twico Profit Than Boforo</p>
+          <p>Sales SEO Visitor</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 mb-3">
+        <img src="girls1.jpeg" class="w-100" alt="Image 2">
+        <div class="bg-light py-2 px-3">
+          <p>Twico Profit Than Boforo</p>
+          <p>Sales SEO Visitor</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 mb-3">
+        <img src="girls3.jpeg" class="w-100" alt="Image 3">
+        <div class="bg-light py-2 px-3">
+          <p>Twico Profit Than Boforo</p>
+          <p>Sales SEO Visitor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="text-center mt-5">
+      <h4 class="text-primary">CASE STUDIES</h4>
+      <h1>Our Recent Cases</h1>
+      <hr class="col-8 col-md-2 m-auto my-3" />
+      <p class="w-50 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sit et provident
+        magniquam est. Animi magni fugit quia reiciendis!</p>
+    </div>
+    <div class="row py-3">
+      <div class="col-md-4 col-sm-12 my-3">
+        <div class="bg-light text-center py-5">
+          <img src="girls5.jpeg" class="w-50 rounded-pill" alt="Image 1">
+        </div>
+        <div class="bg-light py-2 px-3 text-center">
+          <h4>Jossica Jonos</h4>
+          <h5 class="text-secondary">Sales & MARKETING</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem quae rerum voluptates
+            dignissimos aut.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 my-3">
+        <div class="bg-light text-center py-5">
+          <img src="images6.jpeg" class="w-50 rounded-pill" alt="Image 2">
+        </div>
+        <div class="bg-light py-2 px-3 text-center">
+          <h4>Amir Bubhan</h4>
+          <h5 class="text-secondary">DATA SCIENTIST</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dicta aliquid, eligendi obcaecati debitis
+            eos!</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 my-3">
+        <div class="bg-light text-center py-5">
+          <img src="girls3.jpeg" class="w-50 rounded-pill" alt="Image 3">
+        </div>
+        <div class="bg-light py-2 px-3 text-center">
+          <h4>Natasha</h4>
+          <h5 class="text-secondary">SENIOR EXECUTIVE</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est, sapiente nemo non dolores laudantium!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-5">
+    <div class="container">
+      <div class="text-center mt-5">
+        <h4 class="text-primary">BEST PRICING</h4>
+        <h1>Our Pricing Packages</h1>
+        <hr class="col-8 col-md-2 m-auto my-3" />
+        <p class="w-50 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sit et provident
+          magni
+          quam est. Animi magni fugit quia reiciendis!</p>
+      </div>
+      <div class="row py-3 mt-3">
+        <div class="bg-white col-md-4 col-sm-12 mb-3 p-0 pb-3 text-center mt-3">
+          <div class="bg-black text-light py-3">
+            <h1>$15/<span class="fs-3">mo</span></h1>
+          </div>
+          <div>
+            <img src="plane.png" alt="" width="50px" class="py-4">
+            <h5 class="py-3"><a href="#" class="text-black">Basic</a></h5>
+            <p class="fs-8 p-0 text-secondary">Demo File</p>
+            <p class="fs-8 p-0 text-secondary">Update</p>
+            <p class="fs-8 p-0 text-secondary">File Compressed</p>
+            <p class="fs-8 p-0 text-secondary">Commercial Use</p>
+            <p class="fs-8 p-0 text-secondary">Support</p>
+            <p class="fs-8 p-0 text-secondary">5 Database</p>
+            <p class="fs-8 p-0 text-secondary">Documentation</p>
+          </div>
+
+        </div>
+        <div class="bg-white col-md-4 col-sm-12 p-0 pb-3 text-center border border-black">
+          <div class="bg-primary text-light py-3">
+            <h1>$15/<span class="fs-3">mo</span></h1>
+          </div>
+          <div>
+            <img src="medal.png" alt="" width="50px" class="py-4">
+            <h5 class="py-3"><a href="#" class="text-black">standard</a></h5>
+            <p class="fs-8 p-0 text-secondary">Demo File</p>
+            <p class="fs-8 p-0 text-secondary">Update</p>
+            <p class="fs-8 p-0 text-secondary">File Compressed</p>
+            <p class="fs-8 p-0 text-secondary">Commercial Use</p>
+            <p class="fs-8 p-0 text-secondary">Support</p>
+            <p class="fs-8 p-0 text-secondary">5 Database</p>
+            <p class="fs-8 p-0 text-secondary">Documentation</p>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="bg-white col-md-4 col-sm-12 mb-3 pb-3 p-0 text-center mt-3">
+          <div class="bg-black text-light py-3">
+            <h1>$15/<span class="fs-3">mo</span></h1>
+          </div>
+          <div>
+            <img src="diamond.png" alt="" width="50px" class="py-4">
+            <h5 class="py-3"><a href="#" class="text-black">Complete</a></h5>
+            <p class="fs-8 p-0 text-secondary">Demo File</p>
+            <p class="fs-8 p-0 text-secondary">Update</p>
+            <p class="fs-8 p-0 text-secondary">File Compressed</p>
+            <p class="fs-8 p-0 text-secondary">Commercial Use</p>
+            <p class="fs-8 p-0 text-secondary">Support</p>
+            <p class="fs-8 p-0 text-secondary">5 Database</p>
+            <p class="fs-8 p-0 text-secondary">Documentation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-5">
+    <div class="container">
+      <div class="text-center mt-3">
+        <h5 class="text-primary">CUSTOMER REVIEW</h5>
+        <h2>What People Say</h2>
+        <hr class="col-8 col-md-2 m-auto my-3" />
+      </div>
+      <div class="container my-5">
+        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="text-box text-center border border-dark">
+                <h4>Jossica Jonos</h4>
+                <h3>Sales & MARKETING</h3>
+                <hr class="col-8 col-md-2 m-auto my-3" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas iusto vitae suscipit, incidunt
+                  sequi! Recusandae inventore distinctio illum sit obcaecati quod id maiores, tempore dicta iure
+                  laudantium sed numquam minus maxime porro nulla. Fugiat, voluptates reprehenderit voluptatibus
+                  incidunt, architecto repellat dicta illum voluptatum quaerat maiores veniam modi, sint doloremque!</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="text-box text-center border border-dark">
+                <h4>Amir Bubhan</h4>
+                <h3>DATA SCIENTIST</h3>
+                <hr class="col-8 col-md-2 m-auto my-3" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ad eos cum repellendus dolor voluptates
+                  deserunt, natus incidunt laborum nisi consectetur saepe recusandae iste voluptatum nihil quas enim
+                  provident, a aut quam doloremque ab odio consequatur? Dolores nulla obcaecati, necessitatibus ad
+                  incidunt tempora tenetur consectetur debitis consequatur accusantium eligendi odio.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="text-box text-center border border-dark">
+                <h4>Natasha</h4>
+                <h3>SENIOR EXECUTIVE</h3>
+                <hr class="col-8 col-md-2 m-auto my-3" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex id quia, earum, veritatis nihil,
+                  asperiores accusantium mollitia nam quas laboriosam dolorum facere totam quidem nemo nesciunt laborum
+                  quaerat voluptas eum similique. Praesentium optio aliquid omnis mollitia, molestias ipsa doloribus
+                  dolorem laborum dolores deleniti nisi nulla rerum. Reprehenderit quidem omnis excepturi?</p>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#textCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#textCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-4">
+    <div class="container mt-5">
+      <div class="text-center mt-5">
+        <h4 class="text-primary">LETEST BLOG</h4>
+        <h1>Our Company News</h1>
+        <hr class="col-8 col-md-2 m-auto my-3" />
+        <p class="w-50 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vero asperiores culpa hic
+          error accusantium at eum accusamus ex. Adipisci labore omnis quia repellendus culpa!</p>
+      </div>
+      <div class="row py-3">
+        <div class="col-md-4 col-sm-12 my-3">
+          <div class="bg-white image-container">
+            <img src="images6.jpeg" alt="Image 1">
+          </div>
+          <div class="bg-white p-3">
+            <p class="text-secondary">12 APR 2019</p>
+            <h5>September Suspicion provailed</h5>
+            <p><small>ipsum dolor sit amet consectetur adipisicing elit. Odio dicta aliquid, eligendi obcaecati
+                debitiseos!</small></p>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <div>
+                <p><small>READ MORE</small></p>
+              </div>
+              <div>
+                <p><small>23 COMMENTS</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 my-3">
+          <div class="bg-white image-container">
+            <img src="images6.jpeg" alt="Image 2">
+          </div>
+          <div class="bg-white p-3">
+            <p class="text-secondary">15 MAY 2019</p>
+            <h5>Gravity Son Brought Shyness</h5>
+            <p><small>ipsum dolor sit amet consectetur adipisicing elit. Odio dicta aliquid, eligendi obcaecati
+                debitiseos!</small></p>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <div>
+                <p><small>READ MORE</small></p>
+              </div>
+              <div>
+                <p><small>16 COMMENTS</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 my-3">
+          <div class="bg-white image-container">
+            <img src="images6.jpeg" alt="Image 3">
+          </div>
+          <div class="bg-white p-3">
+            <p class="text-secondary">25 JUN 2019</p>
+            <h5>Dashwoods Deficient Concluded</h5>
+            <p><small>ipsum dolor sit amet consectetur adipisicing elit. Quae est, sapiente nemo non dolores
+                laudantium!</small></p>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <div>
+                <p><small>READ MORE</small></p>
+              </div>
+              <div>
+                <p><small>34 COMMENTS</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer bg-white">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="box">
+            <h3 class="py-3">webfix</h3>
+            <p class="text-black-50 my-3">Lorem ipsum dolor sit, amet conur adipisicing elit. Nobis impedit placeat,
+              eius
+              voluptas quasi mollitia.</p>
+            <p class="text-black-50 my-5">enter your email here</p>
+            <button class="bg-primary bg-gradient py-2 px-4">SUBSCRIBE</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="box">
+            <h5 class="py-3">Quick Link</h5>
+            <p class="text-black-50">Home</p>
+            <p class="text-black-50">About us</p>
+            <p class="text-black-50">Company History</p>
+            <p class="text-black-50">Features</p>
+            <p class="text-black-50">Blog Page</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="box">
+            <h5 class="py-3">Community</h5>
+            <p class="text-black-50">Career</p>
+            <p class="text-black-50">Leadership</p>
+            <p class="text-black-50">Strategy</p>
+            <p class="text-black-50">services</p>
+            <p class="text-black-50">History</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="box">
+            <h5 class="py-3">Contact Info</h5>
+            <p>ADDRESS:</p>
+            <p class="text-black-50"><small>127 street New Trafford Colifornia</small></p>
+            <p>EMAIL:</p>
+            <p class="text-black-50"><small>rohitpatidar397@gmail.com</small></p>
+            <p>PHONE:</p>
+            <p class="text-black-50"><small>8819079809</small></p>
+            <button class="mx-1"><img src="facebook.png" alt="" width="20px"></button>
+            <button class="mx-1"><img src="twitter-logo.png" alt="" width="20px"></button>
+            <button class="mx-1"><img src="instagram.png" alt="" width="20px"></button>
+            <button class="mx-1"><img src="whatsapp.png" alt="" width="20px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-dark border-3">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <div>
+          <p class="text-black-50">
+            @Copyright 2019 All Right Reserved by validthomos
+          </p>
+        </div>
+        <div class="d-flex">
+          <p class="mx-2 text-black-50"><small>Terms of user</small></p>
+          <p class="mx-2 text-black-50"><small>Liconsa</small></p>
+          <p class="mx-2 text-black-50"><small>Support</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
